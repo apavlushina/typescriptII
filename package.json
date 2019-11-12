@@ -1,0 +1,32 @@
+{
+  "name": "TS2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/koa": "^2.0.52",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-multer": "^1.0.0",
+    "@types/koa-router": "^7.0.42",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "routing-controllers": "^0.8.0",
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
