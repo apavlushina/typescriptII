@@ -1,5 +1,6 @@
 import {
   JsonController,
+  Authorized,
   Get,
   Param,
   Put,
@@ -29,7 +30,7 @@ export default class PageController {
   //   return { pages: Object.values(pagesById) };
   // }
 
-  @Get("/pages")
+  @Authorized()
   async allPages() {
     const pages = await Page.find();
     return { pages };
@@ -56,6 +57,7 @@ export default class PageController {
   //   return body;
   // }
 
+  @Authorized()
   @Post("/pages")
   @HttpCode(201)
   createPage(@Body() page: Page) {
