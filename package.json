@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc",
-    "start": "node ."
+    "start": "node .",
+    "postinstall": "tsc -p ."
   },
   "keywords": [],
   "author": "",
